@@ -2,7 +2,7 @@
 Swift RSS Sample
 ================
 
-An RSS reader app written in [Swift](https://developer.apple.com/swift/).
+An RSS reader app written in [Swift](https://developer.apple.com/swift/). Written in 1 hour.
 
 ![Movie](movie.gif)
 
