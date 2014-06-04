@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" textLabel="OZo-C7-hsj" style="IBUITableViewCellStyleDefault" id="iFu-PY-91O" customClass="ViewController" customModule="RSSReader" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" textLabel="OZo-C7-hsj" style="IBUITableViewCellStyleDefault" id="iFu-PY-91O">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iFu-PY-91O" id="3MA-Ob-VLG">
                                     <autoresizingMask key="autoresizingMask"/>
