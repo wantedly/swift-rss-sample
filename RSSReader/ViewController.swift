@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController, MWFeedParserDelegate {
     
-    var items: NSMutableArray! = nil
+    var items = MWFeedItem[]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     
     func feedParserDidStart(parser: MWFeedParser) {
         SVProgressHUD.show()
-        self.items = NSMutableArray()
+        self.items = MWFeedItem[]()
     }
 
     func feedParserDidFinish(parser: MWFeedParser) {
@@ -52,7 +52,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     
     func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
         println(item)
-        self.items.addObject(item)
+        self.items.append(item)
     }
 
     override func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
