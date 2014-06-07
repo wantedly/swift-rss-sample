@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA8082B9193E022900BC672D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8082B8193E022900BC672D /* logo.png */; };
+		AA8AA144194362C900C3888B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8AA143194362C900C3888B /* logo.png */; };
 		AAC02B19193DEEFE003997F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC02B18193DEEFE003997F3 /* AppDelegate.swift */; };
 		AAC02B1B193DEEFE003997F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC02B1A193DEEFE003997F3 /* ViewController.swift */; };
 		AAC02B1E193DEEFE003997F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC02B1C193DEEFE003997F3 /* Main.storyboard */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA8082B8193E022900BC672D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../tmp/logo.png; sourceTree = "<group>"; };
+		AA8AA143194362C900C3888B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		AAC02B13193DEEFE003997F3 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC02B17193DEEFE003997F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC02B18193DEEFE003997F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		AAC02B15193DEEFE003997F3 /* RSSReader */ = {
 			isa = PBXGroup;
 			children = (
-				AA8082B8193E022900BC672D /* logo.png */,
+				AA8AA143194362C900C3888B /* logo.png */,
 				AAC02B18193DEEFE003997F3 /* AppDelegate.swift */,
 				AAC02B1A193DEEFE003997F3 /* ViewController.swift */,
 				AAC02B1C193DEEFE003997F3 /* Main.storyboard */,
@@ -213,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA8082B9193E022900BC672D /* logo.png in Resources */,
+				AA8AA144194362C900C3888B /* logo.png in Resources */,
 				AAC02B3A193DF344003997F3 /* Podfile in Resources */,
 				AAC02B1E193DEEFE003997F3 /* Main.storyboard in Resources */,
 				AAC02B20193DEEFE003997F3 /* Images.xcassets in Resources */,
