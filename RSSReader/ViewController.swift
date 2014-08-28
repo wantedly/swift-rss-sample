@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController, MWFeedParserDelegate {
     
-    var items = MWFeedItem[]()
+    var items = [MWFeedItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     
     func feedParserDidStart(parser: MWFeedParser) {
         SVProgressHUD.show()
-        self.items = MWFeedItem[]()
+        self.items = [MWFeedItem]()
     }
 
     func feedParserDidFinish(parser: MWFeedParser) {
