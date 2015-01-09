@@ -55,7 +55,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
         self.items.append(item)
     }
 
-    override func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100
     }
     
@@ -78,19 +78,19 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
         let con = KINWebBrowserViewController()
         let URL = NSURL(string: item.link)
         con.loadURL(URL)
-        self.navigationController.pushViewController(con, animated: true)
+        self.navigationController?.pushViewController(con, animated: true)
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let item = self.items[indexPath.row] as MWFeedItem
-        cell.textLabel.text = item.title
-        cell.textLabel.font = UIFont.systemFontOfSize(14.0)
-        cell.textLabel.numberOfLines = 0
+        cell.textLabel?.text = item.title
+        cell.textLabel?.font = UIFont.systemFontOfSize(14.0)
+        cell.textLabel?.numberOfLines = 0
         
         let projectURL = item.link.componentsSeparatedByString("?")[0]
-        let imgURL: NSURL = NSURL(string: projectURL + "/cover_image?style=200x200#")
-        cell.imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        cell.imageView.setImageWithURL(imgURL, placeholderImage: UIImage(named: "logo.png"))
+        let imgURL: NSURL? = NSURL(string: projectURL + "/cover_image?style=200x200#")
+        cell.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        cell.imageView?.setImageWithURL(imgURL, placeholderImage: UIImage(named: "logo.png"))
     }
 
 }
