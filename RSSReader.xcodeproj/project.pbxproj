@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4CA0575CFAC3FFF1495048F9 /* Pods_RSSReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0FCBF3AF7D0C482C8B46E5 /* Pods_RSSReaderTests.framework */; };
-		AA8AA144194362C900C3888B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AA8AA143194362C900C3888B /* logo.png */; };
+		8BB79981203A57C600378C44 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB79980203A57C500378C44 /* logo.png */; };
+		8BB79984203A58A400378C44 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB79982203A58A400378C44 /* FeedCell.swift */; };
+		8BB79985203A58A400378C44 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB79983203A58A400378C44 /* FeedCell.xib */; };
+		8BB79987203A5EDC00378C44 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB79986203A5EDC00378C44 /* Launch Screen.storyboard */; };
 		AAC02B19193DEEFE003997F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC02B18193DEEFE003997F3 /* AppDelegate.swift */; };
 		AAC02B1B193DEEFE003997F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC02B1A193DEEFE003997F3 /* ViewController.swift */; };
 		AAC02B1E193DEEFE003997F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC02B1C193DEEFE003997F3 /* Main.storyboard */; };
@@ -35,7 +38,10 @@
 		3B0FCBF3AF7D0C482C8B46E5 /* Pods_RSSReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640183C4A1209A427FB96824 /* Pods-RSSReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.release.xcconfig"; sourceTree = "<group>"; };
 		697F38DD3077968DF6C7E5A5 /* Pods-RSSReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.debug.xcconfig"; sourceTree = "<group>"; };
-		AA8AA143194362C900C3888B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8BB79980203A57C500378C44 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8BB79982203A58A400378C44 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		8BB79983203A58A400378C44 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		8BB79986203A5EDC00378C44 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		AAC02B13193DEEFE003997F3 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC02B17193DEEFE003997F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC02B18193DEEFE003997F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,13 +119,16 @@
 		AAC02B15193DEEFE003997F3 /* RSSReader */ = {
 			isa = PBXGroup;
 			children = (
-				AA8AA143194362C900C3888B /* logo.png */,
+				8BB79980203A57C500378C44 /* logo.png */,
 				AAC02B18193DEEFE003997F3 /* AppDelegate.swift */,
 				AAC02B1A193DEEFE003997F3 /* ViewController.swift */,
+				8BB79982203A58A400378C44 /* FeedCell.swift */,
+				8BB79983203A58A400378C44 /* FeedCell.xib */,
 				AAC02B1C193DEEFE003997F3 /* Main.storyboard */,
 				AAC02B1F193DEEFE003997F3 /* Images.xcassets */,
 				AAC02B16193DEEFE003997F3 /* Supporting Files */,
 				AAC02B35193DF2B8003997F3 /* RSSReader-Bridging-Header.h */,
+				8BB79986203A5EDC00378C44 /* Launch Screen.storyboard */,
 			);
 			path = RSSReader;
 			sourceTree = "<group>";
@@ -236,10 +245,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA8AA144194362C900C3888B /* logo.png in Resources */,
+				8BB79987203A5EDC00378C44 /* Launch Screen.storyboard in Resources */,
+				8BB79981203A57C600378C44 /* logo.png in Resources */,
 				AAC02B3A193DF344003997F3 /* Podfile in Resources */,
 				AAC02B1E193DEEFE003997F3 /* Main.storyboard in Resources */,
 				AAC02B20193DEEFE003997F3 /* Images.xcassets in Resources */,
+				8BB79985203A58A400378C44 /* FeedCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +378,7 @@
 			files = (
 				AAC02B1B193DEEFE003997F3 /* ViewController.swift in Sources */,
 				AAC02B19193DEEFE003997F3 /* AppDelegate.swift in Sources */,
+				8BB79984203A58A400378C44 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +496,6 @@
 			baseConfigurationReference = 697F38DD3077968DF6C7E5A5 /* Pods-RSSReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = RSSReader/Info.plist;
@@ -502,7 +513,6 @@
 			baseConfigurationReference = 640183C4A1209A427FB96824 /* Pods-RSSReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 54JDK55DR5;
 				INFOPLIST_FILE = RSSReader/Info.plist;

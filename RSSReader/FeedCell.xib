@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="111" id="KGk-i7-Jjw" customClass="FeedCell" customModule="RSSReader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2GdmbbG" translatesAutoresizingMaskIntoConstraints="NO" id="RKe-oI-S18">
+                        <rect key="frame" x="0.0" y="26" width="131" height="58"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xP4-L0-1e7">
+                        <rect key="frame" x="131" y="0.0" width="189" height="111"/>
+                        <subviews>
+                            <view hidden="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NU-vg-4tB">
+                                <rect key="frame" x="96" y="0.0" width="66" height="17"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-J3-orD">
+                                        <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="4uH-ch-Bt6"/>
+                                            <constraint firstAttribute="height" constant="10" id="XCS-Dx-jeP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30/01/2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1J-3b-Eze">
+                                        <rect key="frame" x="10" y="-2" width="51" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="qtT-8p-iLF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="9"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstItem="G1J-3b-Eze" firstAttribute="centerY" secondItem="IIM-J3-orD" secondAttribute="centerY" id="5Bv-ou-Afs"/>
+                                    <constraint firstItem="IIM-J3-orD" firstAttribute="leading" secondItem="3NU-vg-4tB" secondAttribute="leading" id="JhO-NB-lpH"/>
+                                    <constraint firstItem="IIM-J3-orD" firstAttribute="top" secondItem="3NU-vg-4tB" secondAttribute="top" id="THf-t9-eKN"/>
+                                    <constraint firstItem="G1J-3b-Eze" firstAttribute="leading" secondItem="IIM-J3-orD" secondAttribute="trailing" id="UuY-Yz-hXo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ovomaltine muda fórmula e agora a versão mais popular, flocos crocantes, não tem nada animal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-op-WTk">
+                                <rect key="frame" x="8" y="0.0" width="173" height="111"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3NU-vg-4tB" firstAttribute="leading" secondItem="xP4-L0-1e7" secondAttribute="leading" constant="96" id="2xH-fM-8fB"/>
+                            <constraint firstItem="3NU-vg-4tB" firstAttribute="trailing" secondItem="zmB-op-WTk" secondAttribute="trailing" constant="-19" id="BOX-tA-F9X"/>
+                            <constraint firstItem="3NU-vg-4tB" firstAttribute="top" secondItem="xP4-L0-1e7" secondAttribute="topMargin" constant="-8" id="C56-ZN-eqh"/>
+                            <constraint firstAttribute="trailing" secondItem="3NU-vg-4tB" secondAttribute="trailing" constant="27" id="IAW-Kw-T2i"/>
+                            <constraint firstItem="zmB-op-WTk" firstAttribute="centerY" secondItem="xP4-L0-1e7" secondAttribute="centerY" id="NWW-PH-4AE"/>
+                            <constraint firstItem="zmB-op-WTk" firstAttribute="top" secondItem="xP4-L0-1e7" secondAttribute="top" id="pR9-3U-VLS"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="3NU-vg-4tB" secondAttribute="bottom" constant="86" id="sdx-t7-0W5"/>
+                            <constraint firstItem="zmB-op-WTk" firstAttribute="leading" secondItem="xP4-L0-1e7" secondAttribute="leadingMargin" id="u9Q-dB-mun"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkg-lm-1iO">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="111"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="ayx-OC-AeW"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-XJ-aOn">
+                        <rect key="frame" x="126" y="0.0" width="5" height="111"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="5" id="0pD-Oi-DrB"/>
+                            <constraint firstAttribute="width" constant="5" id="jVJ-W3-5iB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xP4-L0-1e7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-11" id="2F3-lw-5fM"/>
+                    <constraint firstItem="xP4-L0-1e7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="131" id="A1w-cP-zJ1"/>
+                    <constraint firstItem="xP4-L0-1e7" firstAttribute="leading" secondItem="RKe-oI-S18" secondAttribute="leading" constant="131" id="MSz-kp-Q8z"/>
+                    <constraint firstAttribute="bottom" secondItem="Jzf-XJ-aOn" secondAttribute="bottom" id="QWv-Jx-aJE"/>
+                    <constraint firstItem="xP4-L0-1e7" firstAttribute="leading" secondItem="Jzf-XJ-aOn" secondAttribute="trailing" id="RL4-lW-gj4"/>
+                    <constraint firstAttribute="trailing" secondItem="xP4-L0-1e7" secondAttribute="trailing" id="Sou-ej-gHj"/>
+                    <constraint firstItem="Jzf-XJ-aOn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UYo-7S-23n"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xP4-L0-1e7" secondAttribute="bottom" constant="-11" id="Xsk-Xm-pNl"/>
+                    <constraint firstItem="Rkg-lm-1iO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZPY-Qn-b0S"/>
+                    <constraint firstItem="RKe-oI-S18" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="gef-Qf-NVD"/>
+                    <constraint firstItem="Rkg-lm-1iO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ghU-0k-mYE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RKe-oI-S18" secondAttribute="bottom" constant="16" id="iBx-Es-A5i"/>
+                    <constraint firstAttribute="bottom" secondItem="Rkg-lm-1iO" secondAttribute="bottom" id="kAf-jo-IIp"/>
+                    <constraint firstItem="xP4-L0-1e7" firstAttribute="trailing" secondItem="RKe-oI-S18" secondAttribute="trailing" constant="189" id="v7D-4Y-rkf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="date" destination="G1J-3b-Eze" id="e9E-cF-RNv"/>
+                <outlet property="img" destination="RKe-oI-S18" id="0v8-uW-hVW"/>
+                <outlet property="txt" destination="zmB-op-WTk" id="0xT-As-o7X"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="98.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="2GdmbbG" width="335" height="150"/>
+        <image name="calendar" width="25" height="25"/>
+    </resources>
+</document>
