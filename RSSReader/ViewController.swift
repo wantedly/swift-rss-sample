@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import MWFeedParser
+import SVProgressHUD
+import KINWebBrowser
 
 class ViewController: UITableViewController, MWFeedParserDelegate {
     
@@ -17,7 +20,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         request()
     }
@@ -28,70 +31,68 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     }
     
     func request() {
-        let URL = NSURL(string: "https://www.wantedly.com/projects.xml")
-        let feedParser = MWFeedParser(feedURL: URL);
-        feedParser.delegate = self
-        feedParser.parse()
+        let url = URL(string: "https://www.wantedly.com/projects.xml")
+        let feedParser = MWFeedParser(feedURL: url)
+        feedParser?.delegate = self
+        feedParser?.parse()
     }
     
-    func feedParserDidStart(parser: MWFeedParser) {
+    func feedParserDidStart(_ parser: MWFeedParser) {
         SVProgressHUD.show()
         self.items = [MWFeedItem]()
     }
 
-    func feedParserDidFinish(parser: MWFeedParser) {
+    func feedParserDidFinish(_ parser: MWFeedParser) {
         SVProgressHUD.dismiss()
         self.tableView.reloadData()
     }
     
     
-    func feedParser(parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
-        println(info)
+    func feedParser(_ parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
+        print(info)
         self.title = info.title
     }
     
-    func feedParser(parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
-        println(item)
+    func feedParser(_ parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
+        print(item)
         self.items.append(item)
     }
 
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "FeedCell")
-        self.configureCell(cell, atIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "FeedCell")
+        self.configureCell(cell: cell, atIndexPath: indexPath)
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = self.items[indexPath.row] as MWFeedItem
         let con = KINWebBrowserViewController()
-        let URL = NSURL(string: item.link)
-        con.loadURL(URL)
+        let url = URL(string: item.link)
+        con.load(url)
         self.navigationController?.pushViewController(con, animated: true)
     }
     
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    func configureCell(cell: UITableViewCell, atIndexPath indexPath: IndexPath) {
         let item = self.items[indexPath.row] as MWFeedItem
         cell.textLabel?.text = item.title
-        cell.textLabel?.font = UIFont.systemFontOfSize(14.0)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 14.0)
         cell.textLabel?.numberOfLines = 0
         
-        let projectURL = item.link.componentsSeparatedByString("?")[0]
-        let imgURL: NSURL? = NSURL(string: projectURL + "/cover_image?style=200x200#")
-        cell.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        cell.imageView?.setImageWithURL(imgURL, placeholderImage: UIImage(named: "logo.png"))
+        let projectURL = item.link.components(separatedBy: "?")
+        let imgURL: URL? = URL(string: "\(projectURL) + \("/cover_image?style=200x200#")")
+        cell.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        cell.imageView?.setImageWith(imgURL, placeholderImage: UIImage(named: "logo.png"))
     }
-
 }
 
