@@ -32,8 +32,12 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func refresh(_ sender: Any) {
+        request()
+    }
     
     func request() {
+        SVProgressHUD.show()
         let url = URL(string: "https://www.vista-se.com.br/feed")
         let feedParser = MWFeedParser(feedURL: url)
         feedParser?.delegate = self
@@ -50,6 +54,11 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
         self.tableView.reloadData()
     }
     
+    func feedParser(_ parser: MWFeedParser!, didFailWithError error: Error!) {
+        SVProgressHUD.dismiss()
+        self.tableView.reloadData()
+    }
+    
     
     func feedParser(_ parser: MWFeedParser, didParseFeedInfo info: MWFeedInfo) {
         print(info.title)
@@ -57,28 +66,6 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     }
     
     func feedParser(_ parser: MWFeedParser, didParseFeedItem item: MWFeedItem) {
-//        NSString *identifier; // Item identifier
-//        NSString *title; // Item title
-//        NSString *link; // Item URL
-//        NSDate *date; // Date the item was published
-//        NSDate *updated; // Date the item was updated if available
-//        NSString *summary; // Description of item
-//        NSString *content; // More detailed content (if available)
-//        NSString *author; // Item author
-//        print("IDENTIFIER")
-//        print(item.identifier)
-//         print("TITLE")
-//        print(item.title)
-//         print("LINK")
-//        print(item.link)
-//         print("DATE")
-//        print(item.date)
-//         print("UPDATED")
-//        print(item.updated)
-//         print("SUMMARY")
-//        print(item.summary)
-//         print("CONTENT")
-//        print(item.content)
         if let imgURL = item.content.extractURLs().first {
             images.append(imgURL)
         } else {
@@ -88,7 +75,7 @@ class ViewController: UITableViewController, MWFeedParserDelegate {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 120
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

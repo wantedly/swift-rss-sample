@@ -23,11 +23,35 @@
                             <outlet property="delegate" destination="ryM-mG-Bs3" id="QGN-MT-WSQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RSS" id="ovJ-3i-DVn"/>
+                    <navigationItem key="navigationItem" title="RSS" id="ovJ-3i-DVn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="uSL-D7-4DI">
+                            <connections>
+                                <action selector="refresh:" destination="ryM-mG-Bs3" id="FJQ-lj-c6p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbP-jS-M6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zYn-Gj-LXc">
+            <objects>
+                <viewController id="8dk-eV-h2r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RsJ-aH-aUl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucz-yD-OI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekc-kT-nbW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0Z-Wq-KVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="250"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="36P-Af-L2S">
@@ -48,7 +72,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNx-nR-5sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="250"/>
+            <point key="canvasLocation" x="140" y="250"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

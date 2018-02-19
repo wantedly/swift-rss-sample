@@ -42,13 +42,13 @@
 		8BB79982203A58A400378C44 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		8BB79983203A58A400378C44 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
 		8BB79986203A5EDC00378C44 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		AAC02B13193DEEFE003997F3 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC02B13193DEEFE003997F3 /* Vista-se.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vista-se.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC02B17193DEEFE003997F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC02B18193DEEFE003997F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC02B1A193DEEFE003997F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAC02B1D193DEEFE003997F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAC02B1F193DEEFE003997F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AAC02B25193DEEFE003997F3 /* RSSReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC02B25193DEEFE003997F3 /* Vista-seTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vista-seTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC02B2A193DEEFE003997F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC02B2B193DEEFE003997F3 /* RSSReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSReaderTests.swift; sourceTree = "<group>"; };
 		AAC02B35193DF2B8003997F3 /* RSSReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSReader-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		AAC02B14193DEEFE003997F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAC02B13193DEEFE003997F3 /* RSSReader.app */,
-				AAC02B25193DEEFE003997F3 /* RSSReaderTests.xctest */,
+				AAC02B13193DEEFE003997F3 /* Vista-se.app */,
+				AAC02B25193DEEFE003997F3 /* Vista-seTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAC02B12193DEEFE003997F3 /* RSSReader */ = {
+		AAC02B12193DEEFE003997F3 /* Vista-se */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "RSSReader" */;
+			buildConfigurationList = AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "Vista-se" */;
 			buildPhases = (
 				88AE26BB9ED97C98A88A8AA3 /* [CP] Check Pods Manifest.lock */,
 				AAC02B0F193DEEFE003997F3 /* Sources */,
@@ -176,14 +176,14 @@
 			);
 			dependencies = (
 			);
-			name = RSSReader;
+			name = "Vista-se";
 			productName = RSSReader;
-			productReference = AAC02B13193DEEFE003997F3 /* RSSReader.app */;
+			productReference = AAC02B13193DEEFE003997F3 /* Vista-se.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AAC02B24193DEEFE003997F3 /* RSSReaderTests */ = {
+		AAC02B24193DEEFE003997F3 /* Vista-seTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAC02B32193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "RSSReaderTests" */;
+			buildConfigurationList = AAC02B32193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "Vista-seTests" */;
 			buildPhases = (
 				CE8CDEA47A7CF86E752F8E16 /* [CP] Check Pods Manifest.lock */,
 				AAC02B21193DEEFE003997F3 /* Sources */,
@@ -197,9 +197,9 @@
 			dependencies = (
 				AAC02B27193DEEFE003997F3 /* PBXTargetDependency */,
 			);
-			name = RSSReaderTests;
+			name = "Vista-seTests";
 			productName = RSSReaderTests;
-			productReference = AAC02B25193DEEFE003997F3 /* RSSReaderTests.xctest */;
+			productReference = AAC02B25193DEEFE003997F3 /* Vista-seTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 				TargetAttributes = {
 					AAC02B12193DEEFE003997F3 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 54JDK55DR5;
+						DevelopmentTeam = 2MK765758P;
 					};
 					AAC02B24193DEEFE003997F3 = {
 						CreatedOnToolsVersion = 6.0;
@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "RSSReader" */;
+			buildConfigurationList = AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "Vista-se" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAC02B12193DEEFE003997F3 /* RSSReader */,
-				AAC02B24193DEEFE003997F3 /* RSSReaderTests */,
+				AAC02B12193DEEFE003997F3 /* Vista-se */,
+				AAC02B24193DEEFE003997F3 /* Vista-seTests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,7 +395,7 @@
 /* Begin PBXTargetDependency section */
 		AAC02B27193DEEFE003997F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AAC02B12193DEEFE003997F3 /* RSSReader */;
+			target = AAC02B12193DEEFE003997F3 /* Vista-se */;
 			targetProxy = AAC02B26193DEEFE003997F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -497,10 +497,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 54JDK55DR5;
+				DEVELOPMENT_TEAM = 2MK765758P;
 				INFOPLIST_FILE = RSSReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.vistase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RSSReader/RSSReader-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -514,10 +515,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 54JDK55DR5;
+				DEVELOPMENT_TEAM = 2MK765758P;
 				INFOPLIST_FILE = RSSReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezefranca.vistase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RSSReader/RSSReader-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -565,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "RSSReader" */ = {
+		AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "Vista-se" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAC02B2D193DEEFE003997F3 /* Debug */,
@@ -574,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "RSSReader" */ = {
+		AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "Vista-se" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAC02B30193DEEFE003997F3 /* Debug */,
@@ -583,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAC02B32193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "RSSReaderTests" */ = {
+		AAC02B32193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "Vista-seTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAC02B33193DEEFE003997F3 /* Debug */,
