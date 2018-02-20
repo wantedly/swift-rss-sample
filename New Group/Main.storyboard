@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Zs-yA-Tfy">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RSS-->
+        <scene sceneID="aN2-gC-NoO">
+            <objects>
+                <tableViewController id="ryM-mG-Bs3" customClass="ViewController" customModule="RSSReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4CI-DW-W5m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="ryM-mG-Bs3" id="8tU-rB-RD9"/>
+                            <outlet property="delegate" destination="ryM-mG-Bs3" id="QGN-MT-WSQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="RSS" id="ovJ-3i-DVn">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="uSL-D7-4DI">
+                            <connections>
+                                <action selector="refresh:" destination="ryM-mG-Bs3" id="FJQ-lj-c6p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbP-jS-M6I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zYn-Gj-LXc">
+            <objects>
+                <viewController id="8dk-eV-h2r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RsJ-aH-aUl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucz-yD-OI6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekc-kT-nbW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U0Z-Wq-KVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="250"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="36P-Af-L2S">
+            <objects>
+                <navigationController id="4Zs-yA-Tfy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gl6-hy-rkl">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.45314091444015503" green="0.54571521282196045" blue="0.12077073007822037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ryM-mG-Bs3" kind="relationship" relationship="rootViewController" id="ZC7-Or-dK2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNx-nR-5sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="250"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>

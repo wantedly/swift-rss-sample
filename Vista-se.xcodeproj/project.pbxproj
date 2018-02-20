@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		259B92257A80CAF9C255A5EB /* Pods_Vista_se.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F23217022E1AC8D8FF75DEA /* Pods_Vista_se.framework */; };
+		8BB79998203B85FE00378C44 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB7998D203B85FD00378C44 /* FeedCell.xib */; };
+		8BB79999203B85FE00378C44 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB7998E203B85FD00378C44 /* logo.png */; };
+		8BB7999A203B85FE00378C44 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB7998F203B85FD00378C44 /* Launch Screen.storyboard */; };
+		8BB7999B203B85FE00378C44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB79990203B85FD00378C44 /* Images.xcassets */; };
+		8BB7999C203B85FE00378C44 /* icone_vista_se.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BB79991203B85FD00378C44 /* icone_vista_se.jpg */; };
+		8BB7999D203B85FE00378C44 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BB79992203B85FE00378C44 /* Info.plist */; };
+		8BB7999E203B85FE00378C44 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB79993203B85FE00378C44 /* FeedCell.swift */; };
+		8BB7999F203B85FE00378C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB79994203B85FE00378C44 /* AppDelegate.swift */; };
+		8BB799A0203B85FE00378C44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB79996203B85FE00378C44 /* ViewController.swift */; };
+		8BB799A3203B86C300378C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BB799A2203B86B500378C44 /* Main.storyboard */; };
+		AAC02B3A193DF344003997F3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AAC02B39193DF344003997F3 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13309F42819CB74E67D6A028 /* Pods-RSSReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		246E9E0B92EAC1A7BA66C656 /* Pods-Vista-seTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vista-seTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vista-seTests/Pods-Vista-seTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C1AA53046DA50D840398BCD /* Pods_RSSReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D757707C144E43AC840CE1A /* Pods_Vista_seTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vista_seTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3751883036FBA32BF6A282BC /* Pods-Vista-se.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vista-se.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vista-se/Pods-Vista-se.release.xcconfig"; sourceTree = "<group>"; };
+		3A137C52CB1642A6B75A6C93 /* Pods-RSSReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReaderTests/Pods-RSSReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0FCBF3AF7D0C482C8B46E5 /* Pods_RSSReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSSReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F23217022E1AC8D8FF75DEA /* Pods_Vista_se.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vista_se.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		640183C4A1209A427FB96824 /* Pods-RSSReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.release.xcconfig"; sourceTree = "<group>"; };
+		697F38DD3077968DF6C7E5A5 /* Pods-RSSReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.debug.xcconfig"; sourceTree = "<group>"; };
+		6EAF24B39436799B7B85E685 /* Pods-Vista-se.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vista-se.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vista-se/Pods-Vista-se.debug.xcconfig"; sourceTree = "<group>"; };
+		8BB7998D203B85FD00378C44 /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedCell.xib; path = "Vista-se/FeedCell.xib"; sourceTree = SOURCE_ROOT; };
+		8BB7998E203B85FD00378C44 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "Vista-se/logo.png"; sourceTree = SOURCE_ROOT; };
+		8BB7998F203B85FD00378C44 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Vista-se/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		8BB79990203B85FD00378C44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Vista-se/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		8BB79991203B85FD00378C44 /* icone_vista_se.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icone_vista_se.jpg; path = "Vista-se/icone_vista_se.jpg"; sourceTree = SOURCE_ROOT; };
+		8BB79992203B85FE00378C44 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Vista-se/Info.plist"; sourceTree = SOURCE_ROOT; };
+		8BB79993203B85FE00378C44 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = "Vista-se/FeedCell.swift"; sourceTree = SOURCE_ROOT; };
+		8BB79994203B85FE00378C44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Vista-se/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		8BB79995203B85FE00378C44 /* RSSReader-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RSSReader-Bridging-Header.h"; path = "Vista-se/RSSReader-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		8BB79996203B85FE00378C44 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Vista-se/ViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8BB799A2203B86B500378C44 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AAC02B13193DEEFE003997F3 /* Vista-se.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vista-se.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC02B2A193DEEFE003997F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC02B2B193DEEFE003997F3 /* RSSReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSReaderTests.swift; sourceTree = "<group>"; };
+		AAC02B39193DF344003997F3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FC89E12AF80172D8082C50CC /* Pods-Vista-seTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vista-seTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vista-seTests/Pods-Vista-seTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC02B10193DEEFE003997F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259B92257A80CAF9C255A5EB /* Pods_Vista_se.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72DF2961FEFF079C61BD3EDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				697F38DD3077968DF6C7E5A5 /* Pods-RSSReader.debug.xcconfig */,
+				640183C4A1209A427FB96824 /* Pods-RSSReader.release.xcconfig */,
+				3A137C52CB1642A6B75A6C93 /* Pods-RSSReaderTests.debug.xcconfig */,
+				13309F42819CB74E67D6A028 /* Pods-RSSReaderTests.release.xcconfig */,
+				6EAF24B39436799B7B85E685 /* Pods-Vista-se.debug.xcconfig */,
+				3751883036FBA32BF6A282BC /* Pods-Vista-se.release.xcconfig */,
+				FC89E12AF80172D8082C50CC /* Pods-Vista-seTests.debug.xcconfig */,
+				246E9E0B92EAC1A7BA66C656 /* Pods-Vista-seTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BB7998C203B85EA00378C44 /* Vista-se */ = {
+			isa = PBXGroup;
+			children = (
+				8BB79994203B85FE00378C44 /* AppDelegate.swift */,
+				8BB79993203B85FE00378C44 /* FeedCell.swift */,
+				8BB7998D203B85FD00378C44 /* FeedCell.xib */,
+				8BB799A2203B86B500378C44 /* Main.storyboard */,
+				8BB79991203B85FD00378C44 /* icone_vista_se.jpg */,
+				8BB79990203B85FD00378C44 /* Images.xcassets */,
+				8BB79992203B85FE00378C44 /* Info.plist */,
+				8BB7998F203B85FD00378C44 /* Launch Screen.storyboard */,
+				8BB7998E203B85FD00378C44 /* logo.png */,
+				8BB79995203B85FE00378C44 /* RSSReader-Bridging-Header.h */,
+				8BB79996203B85FE00378C44 /* ViewController.swift */,
+			);
+			name = "Vista-se";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A51F0087B05B822CE6215D98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C1AA53046DA50D840398BCD /* Pods_RSSReader.framework */,
+				3B0FCBF3AF7D0C482C8B46E5 /* Pods_RSSReaderTests.framework */,
+				3F23217022E1AC8D8FF75DEA /* Pods_Vista_se.framework */,
+				2D757707C144E43AC840CE1A /* Pods_Vista_seTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAC02B0A193DEEFE003997F3 = {
+			isa = PBXGroup;
+			children = (
+				8BB7998C203B85EA00378C44 /* Vista-se */,
+				AAC02B39193DF344003997F3 /* Podfile */,
+				AAC02B28193DEEFE003997F3 /* RSSReaderTests */,
+				AAC02B14193DEEFE003997F3 /* Products */,
+				72DF2961FEFF079C61BD3EDC /* Pods */,
+				A51F0087B05B822CE6215D98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC02B14193DEEFE003997F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC02B13193DEEFE003997F3 /* Vista-se.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC02B28193DEEFE003997F3 /* RSSReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAC02B2B193DEEFE003997F3 /* RSSReaderTests.swift */,
+				AAC02B29193DEEFE003997F3 /* Supporting Files */,
+			);
+			path = RSSReaderTests;
+			sourceTree = "<group>";
+		};
+		AAC02B29193DEEFE003997F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC02B2A193DEEFE003997F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC02B12193DEEFE003997F3 /* Vista-se */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "Vista-se" */;
+			buildPhases = (
+				88AE26BB9ED97C98A88A8AA3 /* [CP] Check Pods Manifest.lock */,
+				AAC02B0F193DEEFE003997F3 /* Sources */,
+				AAC02B10193DEEFE003997F3 /* Frameworks */,
+				AAC02B11193DEEFE003997F3 /* Resources */,
+				957AD5FA4DC47A6A9CD3C3CC /* [CP] Embed Pods Frameworks */,
+				3B23A8640929A21132E4B551 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vista-se";
+			productName = RSSReader;
+			productReference = AAC02B13193DEEFE003997F3 /* Vista-se.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC02B0B193DEEFE003997F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = susieyy;
+				TargetAttributes = {
+					AAC02B12193DEEFE003997F3 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 54JDK55DR5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "Vista-se" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAC02B0A193DEEFE003997F3;
+			productRefGroup = AAC02B14193DEEFE003997F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC02B12193DEEFE003997F3 /* Vista-se */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC02B11193DEEFE003997F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB7999C203B85FE00378C44 /* icone_vista_se.jpg in Resources */,
+				AAC02B3A193DF344003997F3 /* Podfile in Resources */,
+				8BB7999B203B85FE00378C44 /* Images.xcassets in Resources */,
+				8BB799A3203B86C300378C44 /* Main.storyboard in Resources */,
+				8BB79998203B85FE00378C44 /* FeedCell.xib in Resources */,
+				8BB7999A203B85FE00378C44 /* Launch Screen.storyboard in Resources */,
+				8BB79999203B85FE00378C44 /* logo.png in Resources */,
+				8BB7999D203B85FE00378C44 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B23A8640929A21132E4B551 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vista-se/Pods-Vista-se-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88AE26BB9ED97C98A88A8AA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vista-se-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		957AD5FA4DC47A6A9CD3C3CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vista-se/Pods-Vista-se-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/KINWebBrowser/KINWebBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/MWFeedParser/MWFeedParser.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KINWebBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MWFeedParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vista-se/Pods-Vista-se-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC02B0F193DEEFE003997F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BB799A0203B85FE00378C44 /* ViewController.swift in Sources */,
+				8BB7999F203B85FE00378C44 /* AppDelegate.swift in Sources */,
+				8BB7999E203B85FE00378C44 /* FeedCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAC02B2D193DEEFE003997F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAC02B2E193DEEFE003997F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC02B30193DEEFE003997F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAF24B39436799B7B85E685 /* Pods-Vista-se.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = "Vista-se/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ezefranca.vista-se";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vista-se/RSSReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AAC02B31193DEEFE003997F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3751883036FBA32BF6A282BC /* Pods-Vista-se.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54JDK55DR5;
+				INFOPLIST_FILE = "Vista-se/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ezefranca.vista-se";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vista-se/RSSReader-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC02B0E193DEEFE003997F3 /* Build configuration list for PBXProject "Vista-se" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC02B2D193DEEFE003997F3 /* Debug */,
+				AAC02B2E193DEEFE003997F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC02B2F193DEEFE003997F3 /* Build configuration list for PBXNativeTarget "Vista-se" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC02B30193DEEFE003997F3 /* Debug */,
+				AAC02B31193DEEFE003997F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC02B0B193DEEFE003997F3 /* Project object */;
+}
